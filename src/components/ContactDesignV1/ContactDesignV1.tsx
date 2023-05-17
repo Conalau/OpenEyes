@@ -5,6 +5,7 @@ import resets from '../_resets.module.css';
 import classes from './ContactDesignV1.module.css';
 import { Frame25Icon2 } from './Frame25Icon2.js';
 import { Frame25Icon } from './Frame25Icon.js';
+import { Link } from 'react-router-dom';
 
 interface Props {
   className?: string;
@@ -15,14 +16,39 @@ export const ContactDesignV1: FC<Props> = memo(function ContactDesignV1(props = 
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div className={classes.rectangle4}></div>
       <div className={classes.frame1}>
+        <button>
+        <Link to="/">
         <div className={classes.home}>Home</div>
+        </Link>
+        </button>
+        <button>
+        <Link to="/About">
         <div className={classes.about}>About</div>
+        </Link>
+        </button>
         <div className={classes.contactUs}>Contact us</div>
+        <button>
+        <Link to="/Packages">
         <div className={classes.packages}>Packages</div>
+        </Link>
+        </button>
+        <button>
+        <Link to="/MarketPlace">
+        <div className={classes.marketplace}>Marketplace</div>
+        </Link>
+        </button>
       </div>
       <div className={classes.rectangle9}></div>
+      <button>
+      <Link to="/SignUp">
       <div className={classes.signUp}>Sign up</div>
+      </Link>
+      </button>
+      <button>
+      <Link to="/Login">
       <div className={classes.login}>Login</div>
+      </Link>
+      </button>
       <div className={classes.footer}>
         <div className={classes.rectangle92}></div>
         <div className={classes.openEyes}>OpenEyes</div>
@@ -30,7 +56,6 @@ export const ContactDesignV1: FC<Props> = memo(function ContactDesignV1(props = 
         <div className={classes.frame25}>
           <Frame25Icon className={classes.icon} />
         </div>
-        <div className={classes.appertaFoundation}>Apperta Foundation</div>
         <div className={classes.toukanLabsContact}>ToukanLabs contact</div>
         <div className={classes.copyright2023OpenEyesAllRightA}>
           <p className={classes.labelWrapper}>
@@ -66,3 +91,5 @@ export const ContactDesignV1: FC<Props> = memo(function ContactDesignV1(props = 
     </div>
   );
 });
+
+export default ContactDesignV1

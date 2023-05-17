@@ -70,7 +70,9 @@ export const HomepageDesignV1: FC<Props> = memo(function HomepageDesignV1(props 
         your needs and budget.
       </div>
       <button className={classes.button}>
+        <Link to="/About">
         <div className={classes.seeMore}>See more</div>
+        </Link>
       </button>
       <div className={classes.rectangle7}></div>
       <div className={classes.whatCliniciansAreSaying}>
@@ -94,7 +96,6 @@ export const HomepageDesignV1: FC<Props> = memo(function HomepageDesignV1(props 
         <div className={classes.frame25}>
           <Frame25Icon className={classes.icon4} />
         </div>
-        <div className={classes.appertaFoundation}>Apperta Foundation</div>
         <div className={classes.toukanLabsContact}>ToukanLabs contact</div>
         <div className={classes.copyright2023OpenEyesAllRightA}>
           <p className={classes.labelWrapper3}>
@@ -119,7 +120,11 @@ export const HomepageDesignV1: FC<Props> = memo(function HomepageDesignV1(props 
           and budget.
         </div>
         <div className={classes.buton}>
+          <button>
+          <Link to="/Packages">
           <div className={classes.purchaseNow}>Purchase Now</div>
+          </Link>
+          </button>
         </div>
         <div className={classes.partners}>
           <div className={classes.image1}></div>
@@ -143,10 +148,15 @@ export const HomepageDesignV1: FC<Props> = memo(function HomepageDesignV1(props 
           <div className={classes.packages}>Packages</div>
           </Link>
           </button>  
+          <button>
+          <Link to="/MarketPlace">
+          <div className={classes.home}>Marketplace</div>
+          </Link>
+          </button>
         </div>
         <div className={classes.rectangle92}></div>
         <button>
-          <Link to="/SingUp">
+          <Link to="/SignUp">
           <div className={classes.signUp}>Sing up</div>
           </Link>
           </button>  
@@ -160,3 +170,5 @@ export const HomepageDesignV1: FC<Props> = memo(function HomepageDesignV1(props 
     </div>
   );
 });
+
+export default HomepageDesignV1

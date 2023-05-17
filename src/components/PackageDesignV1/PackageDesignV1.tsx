@@ -19,6 +19,7 @@ import { MaterialSymbolsStarRateRounded5 } from './MaterialSymbolsStarRateRounde
 import { MaterialSymbolsStarRateRounded6 } from './MaterialSymbolsStarRateRounded6.js';
 import { MaterialSymbolsStarRateRounded } from './MaterialSymbolsStarRateRounded.js';
 import classes from './PackageDesignV1.module.css';
+import { Link } from 'react-router-dom';
 
 interface Props {
   className?: string;
@@ -90,7 +91,11 @@ export const PackageDesignV1: FC<Props> = memo(function PackageDesignV1(props = 
           at its layout.
         </div>
         <div className={classes.frame263}>
+          <button>
+          <Link to='/Checkout'>
           <div className={classes.getStartedToday3}>Get started today</div>
+          </Link>
+          </button>
         </div>
         <div className={classes._1003}>$10.00</div>
         <div className={classes.ellipse23}>
@@ -117,8 +122,64 @@ export const PackageDesignV1: FC<Props> = memo(function PackageDesignV1(props = 
           </div>
         </div>
       </div>
+      <div className={classes.selectYourIdealPackage}>Select Your Ideal Package</div>
+      <div className={classes.comparePackages}>Compare Packages</div>
+      <div className={classes.seeTheFeaturesAndBenefitsOfEac}>
+        See the features and benefits of each OpenEyes Private Practice plan side-by-side
+      </div>
+      <div className={classes.rectangle4}></div>
+      <div className={classes.frame1}>
+      <button>
+        <Link to="/">
+        <div className={classes.home}>Home</div>
+        </Link>
+        </button>
+        <button>
+        <Link to="/About">
+        <div className={classes.about}>About</div>
+        </Link>
+        </button>
+        <button>
+        <Link to="/Contact">
+        <div className={classes.contactUs}>Contact us</div>
+        </Link>
+        </button>
+        <div className={classes.packages}>Packages</div>
+        <button>
+          <Link to="/MarketPlace">
+        <div className={classes.marketplace}>Marketplace</div>
+          </Link>
+        </button>
+      </div>
+      <div className={classes.rectangle9}></div>
+      <button>
+      <Link to="/SignUp">
+      <div className={classes.signUp}>Sign up</div>
+      </Link>
+      </button>
+      <button>
+      <Link to="/Login">
+      <div className={classes.login}>Login</div>
+      </Link>
+      </button>
+      <div className={classes.footer}>
+        <div className={classes.rectangle92}></div>
+        <div className={classes.openEyes}>OpenEyes</div>
+        <div className={classes.rectangle10}></div>
+        <div className={classes.frame25}>
+          <Frame25Icon className={classes.icon16} />
+        </div>
+        <div className={classes.toukanLabsContact}>ToukanLabs contact</div>
+        <div className={classes.copyright2023OpenEyesAllRightA}>
+          <p className={classes.labelWrapper}>
+            <span className={classes.label}> Copyright ©2023 </span>
+            <span className={classes.label2}>OpenEyes. </span>
+            <span className={classes.label3}>All right are reserved</span>
+          </p>
+        </div>
+      </div>
       <div className={classes.frame27}>
-        <div className={classes.starter2}>Starter</div>
+        <div className={classes.features}>Features</div>
       </div>
       <div className={classes.specs}>
         <div className={classes.performance}>Performance</div>
@@ -154,7 +215,7 @@ export const PackageDesignV1: FC<Props> = memo(function PackageDesignV1(props = 
         <div className={classes.loremIpsum8}>Lorem ipsum</div>
       </div>
       <div className={classes.frame272}>
-        <div className={classes.business}>Business</div>
+        <div className={classes.starter2}>Starter</div>
       </div>
       <div className={classes.specs12}>
         <div className={classes.performance2}>Performance</div>
@@ -190,7 +251,7 @@ export const PackageDesignV1: FC<Props> = memo(function PackageDesignV1(props = 
         <div className={classes.loremIpsum16}>Lorem ipsum</div>
       </div>
       <div className={classes.frame273}>
-        <div className={classes.premium2}>Premium</div>
+        <div className={classes.business}>Business</div>
       </div>
       <div className={classes.specs23}>
         <div className={classes.performance3}>Performance</div>
@@ -226,7 +287,7 @@ export const PackageDesignV1: FC<Props> = memo(function PackageDesignV1(props = 
         <div className={classes.loremIpsum24}>Lorem ipsum</div>
       </div>
       <div className={classes.frame274}>
-        <div className={classes.features}>Features</div>
+        <div className={classes.premium2}>Premium</div>
       </div>
       <div className={classes.specs34}>
         <div className={classes.performance4}>Performance</div>
@@ -261,56 +322,13 @@ export const PackageDesignV1: FC<Props> = memo(function PackageDesignV1(props = 
       <div className={classes.specs44}>
         <div className={classes.loremIpsum32}>Lorem ipsum</div>
       </div>
-      <div className={classes.line15}></div>
-      <div className={classes.line7}></div>
-      <div className={classes.line8}></div>
-      <div className={classes.line9}></div>
-      <div className={classes.line10}></div>
-      <div className={classes.line11}></div>
-      <div className={classes.line12}></div>
-      <div className={classes.line13}></div>
-      <div className={classes.line14}></div>
-      <div className={classes.line152}></div>
       <div className={classes.line1}></div>
       <div className={classes.line5}></div>
       <div className={classes.line2}></div>
       <div className={classes.line3}></div>
-      <div className={classes.line72}></div>
-      <div className={classes.line16}></div>
       <div className={classes.line4}></div>
-      <div className={classes.line162}></div>
-      <div className={classes.selectYourIdealPackage}>Select Your Ideal Package</div>
-      <div className={classes.comparePackages}>Compare Packages</div>
-      <div className={classes.seeTheFeaturesAndBenefitsOfEac}>
-        See the features and benefits of each OpenEyes Private Practice plan side-by-side
-      </div>
-      <div className={classes.rectangle4}></div>
-      <div className={classes.frame1}>
-        <div className={classes.home}>Home</div>
-        <div className={classes.about}>About</div>
-        <div className={classes.contactUs}>Contact us</div>
-        <div className={classes.packages}>Packages</div>
-      </div>
-      <div className={classes.rectangle9}></div>
-      <div className={classes.signUp}>Sign up</div>
-      <div className={classes.login}>Login</div>
-      <div className={classes.footer}>
-        <div className={classes.rectangle92}></div>
-        <div className={classes.openEyes}>OpenEyes</div>
-        <div className={classes.rectangle10}></div>
-        <div className={classes.frame25}>
-          <Frame25Icon className={classes.icon16} />
-        </div>
-        <div className={classes.appertaFoundation}>Apperta Foundation</div>
-        <div className={classes.toukanLabsContact}>ToukanLabs contact</div>
-        <div className={classes.copyright2023OpenEyesAllRightA}>
-          <p className={classes.labelWrapper}>
-            <span className={classes.label}> Copyright ©2023 </span>
-            <span className={classes.label2}>OpenEyes. </span>
-            <span className={classes.label3}>All right are reserved</span>
-          </p>
-        </div>
-      </div>
     </div>
   );
 });
+
+export default PackageDesignV1
