@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import type { FC } from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 
 import classes from './App.module.css';
 import resets from './components/_resets.module.css';
@@ -19,36 +19,36 @@ interface Props {
 }
 export const App: FC<Props> = memo(function App(props = {}) {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/Packages" component={PackageDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/Login" component={LogInDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/About" component={AbotDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/Contact" component={ContactDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/Checkout" component={CheckoutDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/UserProfile" component={UserPageDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/MarketPlace" component={MarketPlaceDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/SignUp" component={SingUpDesignV1}>
-        <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-        <Route exact path="/" component={HomepageDesignV1}>
-          <div className={`${resets.storybrainResets} ${classes.root}`}></div>
-        </Route>
-      </Switch>
-    </Router>
+    <HashRouter>
+  <Switch>
+    <Route exact path="/Packages" component={PackageDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/Login" component={LogInDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/About" component={AbotDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/Contact" component={ContactDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/Checkout" component={CheckoutDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/UserProfile" component={UserPageDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/MarketPlace" component={MarketPlaceDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/SignUp" component={SingUpDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+    <Route exact path="/" component={HomepageDesignV1}>
+      <div className={`${resets.storybrainResets} ${classes.root}`}></div>
+    </Route>
+  </Switch>
+</HashRouter>
   );
 });
