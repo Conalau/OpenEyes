@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
-    "@OpenEyesjs/plugin-react": "^2.0.1",
+    "@vitejs/plugin-react": "^2.0.1",
     "gh-pages": "^5.0.0",
     "typescript": "^4.7.4",
     "vite": "^3.0.9"

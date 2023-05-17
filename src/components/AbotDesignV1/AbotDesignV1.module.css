@@ -178,14 +178,7 @@
   width: 326.5898px;
   height: 104.3478px;
   background-color: #d9d9d9;
-  -webkit-mask-image:/* webpackIgnore: true */ url('/assets/maskGroup3.svg');
-  mask-image:/* webpackIgnore: true */ url('/assets/maskGroup3.svg');
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: 27.794960021972656px 31.30419921875px;
-  mask-position: 27.794960021972656px 31.30419921875px;
-  -webkit-mask-size: 271px 40px;
-  mask-size: 271px 40px;
+  background-image:url('/assets/logomenu1.jpg') 
 }
 .frame25 {
   position: absolute;
